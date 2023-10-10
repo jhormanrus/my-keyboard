@@ -33,13 +33,13 @@
                 lower_layer {
 // ------------------------------------------------------------------------------------
 // |    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |      DEL    |
-// |    |  _  |  +  |  {  |  }  | "|" |   | LFT | DWN |  UP | RGT |  `  |       ~     |
-// |    | ESC | GUI | ALT | CAPS|  "  |   | HOME| END | PGUP| PGDN| PRSC| SHFT(SPACE) |
+// |    |  _  |  +  |  {  |  }  | "|" |   | END | PGUP|  UP | PGDN|  `  |       ~     |
+// |    | ESC | GUI | ALT | CAPS|  "  |   | HOME| LFT | DWN | RGT | PRSC| SHFT(SPACE) |
 //                       |     |     | RET | ADJ |     |
                         bindings = <
-   &trans &kp EXCL  &kp AT      &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp ASTRK &kp LPAR  &kp RPAR  &kp DEL
-   &trans &kp UNDER &kp PLUS    &kp LBRC &kp RBRC &kp PIPE       &kp LEFT  &kp DOWN &kp UP    &kp RIGHT &kp GRAVE &kp TILDE
-   &trans &kp ESC   &kp LGUI    &kp LALT &kp CLCK &kp DQT        &kp HOME  &kp END  &kp PG_UP &kp PG_DN &kp PSCRN &mt RSHFT SPACE
+   &trans &kp EXCL  &kp AT      &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR  &kp DEL
+   &trans &kp UNDER &kp PLUS    &kp LBRC &kp RBRC &kp PIPE       &kp END   &kp PG_UP &kp UP    &kp PG_DN &kp GRAVE &kp TILDE
+   &trans &kp ESC   &kp LGUI    &kp LALT &kp CLCK &kp DQT        &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT &kp PSCRN &mt RSHFT SPACE
                                  &trans      &trans       &kp RET        &mo 3       &trans
                         >;
                 };
