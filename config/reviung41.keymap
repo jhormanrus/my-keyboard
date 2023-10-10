@@ -51,7 +51,7 @@
 // |    | ESC | GUI | ALT | CAPS|  "  |   |  0  |  1  |  2  |  3  |    |     |
 //                       |     | ADJ | BKSP |    |     |
                         bindings = <
-   &trans &kp F5    &F11      &F12      &trans    &trans        &trans    &kp N7    &kp N8    &kp N9    &trans    &kp DEL
+   &trans &kp F5    &kp F11   &kp F12   &trans    &trans        &trans    &kp N7    &kp N8    &kp N9    &trans    &kp DEL
    &trans &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH      &trans    &kp N4    &kp N5    &kp N6    &trans    &trans
    &trans &kp ESC   &kp LGUI  &kp RALT  &kp CLCK  &kp DQT       &kp N0    &kp N1    &kp N2    &kp N3    &trans    &trans
                                 &trans      &mo 3       &kp BSPC        &trans      &trans
