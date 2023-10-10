@@ -45,15 +45,15 @@
                 };
 
                 raise_layer {
-// ----------------------------------------------------------------------------
-// |    | F1  | F5  | F11 | F12 |     |   |     |  7  |  8  |  9  |    | DEL |
-// |    |  -  |  =  |  [  |  ]  |  \  |   |     |  4  |  5  |  6  |    |     |
-// |    | ESC | GUI | ALT | CAPS|  "  |   |  0  |  1  |  2  |  3  |    |     |
+// ------------------------------------------------------------------------------
+// |    | F1  | F5  | F11 | F12 |     |   |     |  7  |  8  |  9  | PLAY | MUTE |
+// |    |  -  |  =  |  [  |  ]  |  \  |   |     |  4  |  5  |  6  | PREV | VOL+ |
+// |    | ESC | GUI | ALT | CAPS|  "  |   |  0  |  1  |  2  |  3  | NEXT | VOL- |
 //                       |     | ADJ | BKSP |    |     |
                         bindings = <
-   &trans &kp F1    &kp F5    &kp F11   &kp F12   &trans        &trans    &kp N7    &kp N8    &kp N9    &trans    &kp DEL
-   &trans &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH      &trans    &kp N4    &kp N5    &kp N6    &trans    &trans
-   &trans &kp ESC   &kp LGUI  &kp RALT  &kp CLCK  &kp DQT       &kp N0    &kp N1    &kp N2    &kp N3    &trans    &trans
+   &trans &kp F1    &kp F5    &kp F11   &kp F12   &trans        &trans    &kp N7    &kp N8    &kp N9    &kp C_PP   &kp C_MUTE
+   &trans &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH      &trans    &kp N4    &kp N5    &kp N6    &kp C_PREV &kp C_VOL_DN
+   &trans &kp ESC   &kp LGUI  &kp RALT  &kp CLCK  &kp DQT       &kp N0    &kp N1    &kp N2    &kp N3    &kp C_NEXT &kp C_VOL_UP
                                 &trans      &mo 3       &kp BSPC        &trans      &trans
                         >;
                 };
