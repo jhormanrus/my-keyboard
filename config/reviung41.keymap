@@ -31,29 +31,29 @@
                 };
 
                 lower_layer {
-// ------------------------------------------------------------------------------------
-// |    | 1 ! | 2 @ | 3 # | 4 $ | 5 % |   | 6 ^ | 7 & | 8 * | 9 ( | 0 ) |      DEL    |
-// |    |  _  |  +  |  {  |  }  | "|" |   |    | HOME | UP  | END |  `  |       ~     |
-// |    | ESC |     |     | CAPS|  "  |   |    | LFT  | DWN | RGT | PRSC| SHFT(SPACE) |
+// -------------------------------------------------------------------------------------
+// | ESC | 1 ! | 2 @ | 3 # | 4 $ | 5 % |   | 6 ^ | 7 & | 8 * | 9 ( | 0 ) |      DEL    |
+// |     |  _  |  =  |  {  |  }  | "|" |   |    | HOME | UP  | END |  `  |       ~     |
+// |     |     |     |     | CAPS|     |   |    | LFT  | DWN | RGT | PRSC| SHFT(SPACE) |
 //                       |     |     |     | ADJ |     |
                         bindings = <
-   &trans &kp N1    &kp N2      &kp N3   &kp N4   &kp N5         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp DEL
-   &trans &kp UNDER &kp PLUS    &kp LBRC &kp RBRC &kp PIPE       &trans    &kp HOME  &kp UP    &kp END   &kp GRAVE &kp TILDE
-   &trans &kp ESC   &trans      &trans   &kp CLCK &kp DQT        &trans    &kp LEFT  &kp DOWN  &kp RIGHT &kp PSCRN &mt RSHFT SPACE
+   &kp ESC &kp N1    &kp N2      &kp N3   &kp N4   &kp N5         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp DEL
+   &trans  &kp UNDER &kp PLUS    &kp LBRC &kp RBRC &kp PIPE       &trans    &kp HOME  &kp UP    &kp END   &kp GRAVE &kp TILDE
+   &trans  &trans    &trans      &trans   &kp CLCK &trans         &trans    &kp LEFT  &kp DOWN  &kp RIGHT &kp PSCRN &mt RSHFT SPACE
                                  &trans      &trans       &trans         &mo 3       &trans
                         >;
                 };
 
                 raise_layer {
-// ------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------
 // |    | F1  | F5  | F11 | F12 |     |   | MUTE | VOL- | VOL+ | PLAY | PREV | NEXT |
-// |    |  -  |  =  |  [  |  ]  |  \  |   |      |      |      |      |      |      |
-// |    | ESC | GUI | ALT | CAPS|  "  |   |      |      |      |      |      |      |
+// |    |  -  |  +  |  [  |  ]  |  \  |   |      |      |      |      |      |      |
+// |    |     |     |     |     |     |   |      |      |      |      |      |      |
 //                       |     | ADJ | BKSP |     |      |
                         bindings = <
    &trans &kp F1    &kp F5    &kp F11   &kp F12   &trans        &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp C_PP &kp C_PREV &kp C_NEXT
    &trans &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH      &trans     &trans       &trans       &trans   &trans     &trans
-   &trans &kp ESC   &kp LGUI  &kp RALT  &kp CLCK  &kp DQT       &trans     &trans       &trans       &trans   &trans     &trans
+   &trans &trans    &trans    &trans    &trans    &trans        &trans     &trans       &trans       &trans   &trans     &trans
                                 &trans      &mo 3       &kp BSPC        &trans      &trans
                         >;
                 };
