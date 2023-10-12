@@ -15,7 +15,7 @@
 / {
     macros {
         less_than: less_than {
-            label = "Less_Than";
+            label = "ZM_less_than";
             compatible = "zmk,behavior-macro";
             bindings
                 = <&macro_press   &kp LALT>
@@ -24,7 +24,7 @@
                 ;
         };
         greater_than: greater_than {
-            label = "Greater_Than";
+            label = "ZM_greater_than";
             compatible = "zmk,behavior-macro";
             bindings
                 = <&macro_press   &kp LALT>
