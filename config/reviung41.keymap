@@ -13,6 +13,29 @@
 #define RAISE   2
 
 / {
+    macros {
+        less_than: less_than {
+            label = "Less_Than";
+            compatible = "zmk,behavior-macro";
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N6 &kp KP_N0>
+                , <&macro_release &kp LALT>
+                ;
+        };
+        greater_than: greater_than {
+            label = "Greater_Than";
+            compatible = "zmk,behavior-macro";
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N6 &kp KP_N2>
+                , <&macro_release &kp LALT>
+                ;
+        };
+    };
+};
+
+/ {
         keymap {
                 compatible = "zmk,keymap";
 
@@ -31,15 +54,15 @@
                 };
 
                 lower_layer {
-// --------------------------------------------------------------------------------------
-// | ESC | 1 ! | 2 " | 3 # | 4 $ | 5 % |   | 6 & | 7 /  | 8 ( | 9 ) | 0 = |     DEL     |
-// |     | { [ | } ] | ¿ ¡ |  ?  | + * |   |     | HOME | UP  | END |     |      @      |
-// |     |     | | ° |     | CAPS|     |   |     | LFT  | DWN | RGT | PRSC| SHFT(SPACE) |
+// ---------------------------------------------------------------------------------------
+// | ESC | 1 ! | 2 " | 3 # | 4 $ | 5 % |   | 6 & | 7 /  | 8 ( | 9 ) | 0 =  |     DEL     |
+// |     | { [ | } ] | ¿ ¡ |  ?  | + * |   |     | HOME | UP  | END | CAPS |      @      |
+// |     |     | | ° |  <  |  >  |     |   |     | LFT  | DWN | RGT | PRSC | SHFT(SPACE) |
 //                        |     |     |     | ADJ |     |
                         bindings = <
-   &kp ESC &kp N1    &kp N2      &kp N3    &kp N4    &kp N5         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp DEL
-   &trans  &kp SQT   &kp BSLH    &kp EQUAL &kp UNDER &kp RBKT       &trans    &kp HOME  &kp UP    &kp END   &trans    &kp RA(Q)
-   &trans  &trans    &kp GRAVE   &trans    &kp CLCK  &trans         &trans    &kp LEFT  &kp DOWN  &kp RIGHT &kp PSCRN &mt RSHFT SPACE
+   &kp ESC &kp N1    &kp N2      &kp N3     &kp N4    &kp N5         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp DEL
+   &trans  &kp SQT   &kp BSLH    &kp EQUAL  &kp UNDER &kp RBKT       &trans    &kp HOME  &kp UP    &kp END   &kp CLCK  &kp RA(Q)
+   &trans  &trans    &kp GRAVE   &less_than &greater_than &trans         &trans    &kp LEFT  &kp DOWN  &kp RIGHT &kp PSCRN &mt RSHFT SPACE
                                  &trans      &trans       &trans         &mo 3       &trans
                         >;
                 };
