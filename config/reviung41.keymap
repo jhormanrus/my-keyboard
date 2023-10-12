@@ -17,6 +17,7 @@
         less_than: less_than {
             label = "ZM_less_than";
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_press   &kp LALT>
                 , <&macro_tap     &kp KP_N6 &kp KP_N0>
@@ -26,6 +27,7 @@
         greater_than: greater_than {
             label = "ZM_greater_than";
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_press   &kp LALT>
                 , <&macro_tap     &kp KP_N6 &kp KP_N2>
