@@ -57,14 +57,14 @@
 
                 lower_layer {
 // ---------------------------------------------------------------------------------------
-// | ESC | 1 ! | 2 " | 3 # | 4 $ | 5 % |   | 6 & | 7 /  | 8 ( | 9 ) | 0 =  |     DEL     |
-// |     | { [ | } ] | ¿ ¡ | ? ' | + * |   |     | HOME | UP  | END | CAPS |      @      |
-// |     |     | | ° |  <  |  >  |     |   |     | LFT  | DWN | RGT | PRSC | SHFT(SPACE) |
+// | ESC | 1 ! | 2 " | 3 # | 4 $ | 5 % |   | 6  & | 7 /  | 8 ( | 9 ) | 0 =  |     DEL     |
+// |     | { [ | } ] | ¿ ¡ | ? ' | + * |   | CAPS | HOME | UP  | END |      |      @      |
+// |     |     | | ° |  <  |  >  |     |   | PRSC | LFT  | DWN | RGT |      | SHFT(SPACE) |
 //                        |     |     |     | ADJ |     |
                         bindings = <
-   &kp ESC &kp N1    &kp N2      &kp N3     &kp N4    &kp N5         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp DEL
-   &trans  &kp SQT   &kp BSLH    &kp EQUAL  &kp MINUS &kp RBKT       &trans    &kp HOME  &kp UP    &kp END   &kp CLCK  &kp RA(Q)
-   &trans  &trans    &kp GRAVE   &less_than &greater_than &trans         &trans    &kp LEFT  &kp DOWN  &kp RIGHT &kp PSCRN &mt RSHFT SPACE
+   &kp ESC &kp N1    &kp N2      &kp N3     &kp N4        &kp N5         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp DEL
+   &trans  &kp SQT   &kp BSLH    &kp EQUAL  &kp MINUS     &kp RBKT       &kp CLCK  &kp HOME  &kp UP    &kp END   &trans    &kp RA(Q)
+   &trans  &trans    &kp GRAVE   &less_than &greater_than &trans         &kp PSCRN &kp LEFT  &kp DOWN  &kp RIGHT &trans    &mt RSHFT SPACE
                                  &trans      &trans       &trans         &mo 3       &trans
                         >;
                 };
