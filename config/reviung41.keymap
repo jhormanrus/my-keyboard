@@ -64,7 +64,7 @@
                         bindings = <
    &kp ESC &kp N1     &kp N2      &kp N3       &kp N4        &kp N5         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp DEL
    &trans  &less_than &kp DQT     &kp SQT      &kp EQUAL     &kp RBKT       &kp CLCK  &kp HOME  &kp UP    &kp END   &trans    &kp RA(Q)
-   &trans  &trans     &kp GRAVE   &kp RA(RBKT) &kp RA(SQT)   &kp RA(MINUS)  &kp PSCRN &kp LEFT  &kp DOWN  &kp RIGHT &trans    &mt RSHFT SPACE
+   &trans  &trans     &trans      &kp RA(RBKT) &kp RA(SQT)   &kp RA(MINUS)  &kp PSCRN &kp LEFT  &kp DOWN  &kp RIGHT &trans    &mt RSHFT SPACE
                                  &trans      &trans       &trans         &mo 3       &trans
                         >;
                 };
