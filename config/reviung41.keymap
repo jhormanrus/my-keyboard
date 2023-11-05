@@ -74,12 +74,12 @@
 // |    | F1  | F5  | F11 | F12 |     |   | MUTE | VOL- | VOL+ | PREV | NEXT | PLAY |
 // |    |  >  |  ]  |  }  |  ?  | | ° |   | vSUG |      |      |      |      |  `   |
 // |    |     |     |     |     |     |   |      |      |      |      |      |      |
-//                       |     | ADJ | BKSP |     |      |
+//                       |     | ADJ |     |     |      |
                         bindings = <
    &trans &kp F1        &kp F5    &kp F11   &kp F12       &trans        &kp C_MUTE    &kp C_VOL_DN &kp C_VOL_UP &kp C_PREV &kp C_NEXT &kp C_PP
    &trans &greater_than &kp PIPE  &kp BSLH  &kp MINUS     &kp GRAVE     &kp LA(GRAVE) &trans       &trans       &trans     &trans     &kp RA(BSLH)
    &trans &trans        &trans    &trans    &trans        &trans        &trans        &trans       &trans       &trans     &trans     &trans
-                                &trans      &mo 3       &kp BSPC        &trans      &trans
+                                &trans      &mo 3       &trans          &trans      &trans
                         >;
                 };
         };
