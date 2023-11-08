@@ -30,6 +30,14 @@
                 , <&macro_release &kp LALT>
                 ;
         };
+        hit_note: hit_note {
+            label = "ZM_hit_note";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LSHFT &kp SPACE &kp UP>
+                ;
+        };
     };
 };
 
@@ -80,15 +88,15 @@
                 };
 
                 audi_layer {
-// -----------------------------------------------------------------
-// |    | F1 | F2 | F3 |    |    |   |    |    |    |    |    |    |
-// |    |    |    |    |    |    |   |    |    |    |    |    |    |
-// |    |    |    |    |    |    |   |    |    |    |    |    |    |
+// -----------------------------------------------------------------------
+// |    | F1  | F2  | F3  |     |    |   |    | HIT | HIT |    |    |    |
+// |    |  M  |  ;  |  :  |  _  |    |   |    |     |     |    |    |    |
+// |    |  Z  |  X  |  C  |  V  |    |   |    |     |     |    |    |    |
 //                  |     |     |     |     |     |
                         bindings = <
-   &none &kp F1 &kp F2 &kp F3 &none &none    &none &none &none &none &none &none
-   &none &none  &none  &none  &none &none    &none &none &none &none &none &none
-   &none &none  &none  &none  &none &none    &none &none &none &none &none &none
+   &none &kp F1 &kp F2    &kp F3  &none    &none    &none &hit_note &hit_note &none &none &none
+   &none &kp M  &kp COMMA &kp DOT &kp FSLH &none    &none &none     &none     &none &none &none
+   &none &kp Z  &kp X     &kp C   &kp V    &none    &none &none     &none     &none &none &none
             &trans      &tog 3       &trans       &tog 3      &trans
                         >;
                 };
