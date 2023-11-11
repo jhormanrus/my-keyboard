@@ -108,15 +108,15 @@
                 };
 
                 audi_layer {
-// --------------------------------------------------------------------------
-// |    | F1  | F2  | F3  |     |    |   |    | HIT | HIT |     |    | DEL  |
-// |    |  M  |  ;  |  :  |  _  |    |   |    |     | UP  |     |    | CTRL |
-// |    |  Z  |  X  |  C  |  V  |    |   |    | LFT | DWN | RGT |    |      |
+// ----------------------------------------------------------------------------
+// |      | F1  | F2  | F3  |     |    |   |    | HIT | HIT |     |    | DEL  |
+// | CTRL |  M  |  ;  |  :  |  _  |    |   |    |     | UP  |     |    | CTRL |
+// |      |  Z  |  X  |  C  |  V  |    |   |    | LFT | DWN | RGT |    |      |
 //                      |     |     |     |     |     |
                         bindings = <
-   &none &kp F1 &kp F2    &kp F3  &none    &none    &none &hit_note &hit_note &none     &none &kp DEL
-   &none &kp M  &kp COMMA &kp DOT &kp FSLH &none    &none &none     &kp UP    &none     &none &ctrl_press
-   &none &kp Z  &kp X     &kp C   &kp V    &none    &none &kp LEFT  &kp DOWN  &kp RIGHT &none &none
+   &none     &kp F1 &kp F2    &kp F3  &none    &none    &none &hit_note &hit_note &none     &none &kp DEL
+   &kp LCTRL &kp M  &kp COMMA &kp DOT &kp FSLH &none    &none &none     &kp UP    &none     &none &ctrl_press
+   &none     &kp Z  &kp X     &kp C   &kp V    &none    &none &kp LEFT  &kp DOWN  &kp RIGHT &none &none
             &trans      &tog 3       &trans       &tog 3      &trans
                         >;
                 };
