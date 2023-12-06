@@ -109,14 +109,14 @@
 
                 audi_layer {
 // ------------------------------------------------------------------------------
-// |      | F1  | F2  | F3  |     |  7  |   |  9  | HIT | HIT |     |    | DEL  |
-// | CTRL |  M  |  ;  |  :  |  _  |  4  |   |  6  |     | UP  |     |    | CTRL |
-// |      |  Z  |  X  |  C  |  V  |  1  |   |  3  | LFT | DWN | RGT |    |      |
-//                         |     |     | SPC |     |     |
+// |      | F1  | F2  | F3  |     |     |   |  7  |  8  |  9  |     | HIT | DEL  |
+// | CTRL |  M  |  ;  |  :  |  _  |     |   |  4  |  5  |  6  |     | UP  | CTRL |
+// |      |  Z  |  X  |  C  |  V  |     |   |  1  |  2  |  3  | LFT | DWN | RGT  |
+//                         |     |     | SPC |     |  0  |
                         bindings = <
-   &none     &kp F1 &kp F2    &kp F3  &none    &kp KP_N7    &kp KP_N9 &hit_note &hit_note &none     &none &kp DEL
-   &kp LCTRL &kp M  &kp COMMA &kp DOT &kp FSLH &kp KP_N4    &kp KP_N6 &none     &kp UP    &none     &none &ctrl_press
-   &none     &kp Z  &kp X     &kp C   &kp V    &kp KP_N1    &kp KP_N3 &kp LEFT  &kp DOWN  &kp RIGHT &none &none
+   &none     &kp F1 &kp F2    &kp F3  &none    &none    &kp KP_N7 &kp KP_N8 &kp KP_N9 &none     &hit_note &kp DEL
+   &kp LCTRL &kp M  &kp COMMA &kp DOT &kp FSLH &none    &kp KP_N4 &kp KP_N5 &kp KP_N6 &none     &kp UP    &ctrl_press
+   &none     &kp Z  &kp X     &kp C   &kp V    &none    &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp LEFT  &kp DOWN  &kp RIGHT
             &trans      &tog 3       &kp SPACE       &tog 3      &trans
                         >;
                 };
